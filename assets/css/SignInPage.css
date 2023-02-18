@@ -1,0 +1,159 @@
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.signin-signup {
+  width: 100%;
+  height: 100vh;
+
+  background-color: blanchedalmond;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin {
+  width: 100%;
+  max-width: 50rem;
+
+  padding: 5.5rem 3.5rem;
+  background-color: white;
+
+  border-radius: 10px;
+}
+
+.signin__title {
+  text-align: center;
+
+  font-size: 4rem;
+  font-weight: bold;
+
+  margin-bottom: 2rem;
+}
+
+.signin__donthaveAccount {
+  text-align: center;
+
+  font-size: 1.4rem;
+  margin-bottom: 3.5rem;
+}
+
+.signin__link {
+  color: #0817e9;
+  font-size: inherit;
+}
+
+.signin__link--none {
+  text-decoration: none;
+}
+
+.form__group {
+  margin-bottom: 1.5rem;
+}
+
+.form__group--2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__input {
+  font-family: "Poppins", sans-serif;
+
+  outline: none;
+  padding: 1.5rem;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  color: black;
+  border-radius: 10px;
+
+  border: 1px solid #ccc;
+  background-color: white;
+
+  width: 100%;
+}
+
+.form__input:focus {
+  border: 1px solid white;
+  background-color: #f5f3f3;
+
+  transition: 0.25s linear;
+}
+
+.form__group--2 .form__input {
+  width: calc(50% - 4px);
+}
+
+.form__group--2 .form__input:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form__group--2 .form__input:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.signin-btn {
+  width: 100%;
+
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  border-radius: 10px;
+
+  background-color: #0061df;
+  color: white;
+
+  border: 1px solid transparent;
+}
+
+.checkbox__remember {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.signin__label {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.form__group .form__password {
+  position: relative;
+  padding: 0px;
+}
+
+.form__group .form__password span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+  display: none;
+}
+
+
+.form__group .form__password .bgcolor--white {
+    background-color: white !important;
+}
+
+.form__group .form__password input:valid ~ span {
+  display: block;
+}
+
+.form__group .form__password span i.hide-btn::before {
+  content: "\f070";
+} 
