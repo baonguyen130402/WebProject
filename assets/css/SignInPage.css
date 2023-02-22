@@ -38,7 +38,7 @@ html {
 
   border-radius: 10px;
 
-  animation: pageFadeIn ease 0.45s;
+  animation: pageFadeIn linear 0.45s;
 }
 
 .signin__title {

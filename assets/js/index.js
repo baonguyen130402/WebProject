@@ -24,3 +24,4 @@ signupBtn.addEventListener("click", () => {
 signupUI.addEventListener("click", (event) => {
   signupUI.classList.remove("show-signupUI");
 });
+
