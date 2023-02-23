@@ -26,13 +26,17 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/SignInPage.css" />
     <link rel="stylesheet" href="./assets/css/SignUpPage.css" />
+    <link rel="stylesheet" href="./assets/css/earthMove.css">
   </head>
   <body>
     <div class="app">
       <header class="header">
         <div class="header__navbar container">
           <div class="header__navbar-container row">
-            <div class="col navbar__logo">LOGO</div>
+            <div class="col navbar__logo">
+              <img class="main-logo" src="./assets/svg/logo.svg" alt="">
+              <img class="supporting-logo" src="./assets/svg/logo_plane.svg" alt="">
+            </div>
             <ul class="col navbar__list">
               <li class="navbar__item"><a href="#" class="link">Home</a></li>
               <li class="navbar__item"><a href="#" class="link">Explore</a></li>
@@ -73,11 +77,34 @@
               unforgettable experience.
             </span>
           </div>
-          <div class="earth">
-            <img class="global-svg" src="./assets/svg/global.svg" alt="">
+          <div class="earth__container">
+            <div class="earth"></div>
+            <!-- <img class="global-svg" src="https://cdn.jsdelivr.net/gh/ManzDev/cursos-assets@gh-pages/css3/earth-2.jpg" alt=""> -->
+            <!-- <img src="./assets/svg/global.svg" alt=""> -->
           </div>
+
+          <!-- <div id="box"></div> -->
           <button class="button discover__container-btn">Discover Now</button>
         </div>
+
+        <!-- <div class="popular-place__container">
+          <div class="popular-place__title">
+            <h1>Popular Destination</h1>
+          </div>
+
+          <ul class="popular-place__list">
+            <li class="popular-place__item">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nulla dolore, alias consequatur quae et, error nesciunt enim nam quis harum soluta voluptatem rem aspernatur ratione quasi blanditiis tenetur a?
+            </li>
+            <li class="popular-place__item">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nulla dolore, alias consequatur quae et, error nesciunt enim nam quis harum soluta voluptatem rem aspernatur ratione quasi blanditiis tenetur a?
+            </li>
+            <li class="popular-place__item">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nulla dolore, alias consequatur quae et, error nesciunt enim nam quis harum soluta voluptatem rem aspernatur ratione quasi blanditiis tenetur a?
+            </li>
+          </ul>
+        </div> -->
+
         <!-- Sign In Page -->
         <div class="signin">
           <div class="signin__container">

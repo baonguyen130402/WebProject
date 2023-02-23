@@ -18,6 +18,8 @@ html {
 
   height: 100vh;
   overflow: hidden;
+
+  min-height: 2000px;
 }
 
 .header {
@@ -26,13 +28,24 @@ html {
 }
 
 .header__navbar-container {
-  /* position: absolute; */
   margin-top: 40px;
 
   width: 100%;
 
   font-size: 1.6rem;
 }
+
+.navbar__logo {
+  position: relative;
+}
+
+.supporting-logo {
+  position: absolute;
+
+  left: 32px;
+}
+
+.nav
 
 .navbar__item:hover > a {
   border-bottom: 1px solid black;
@@ -153,22 +166,26 @@ html {
   background-color: var(--green);
 }
 
-.earth {
-  border: 3px solid var(--black);
-  border-radius: 50%;
-
-  width: 160px;
-  height: 160px;
-
+.popular-place__container {
   position: absolute;
-  right: 30px;
-  bottom: 60px;
+  top: 927px;
 
-  overflow: hidden;
+  width: 100%;
 }
 
-.global-svg {
-  animation: rotation 5s linear 0s infinite;
+.popular-place__title {
+  width: 415px;
+  height: 57px;
+
+  margin: auto;
 }
 
+.popular-place__title h1 {
+  font-size: 47px;
+}
 
+.popular-place__list {
+  text-align: center;
+
+  list-style-type: none;
+}
