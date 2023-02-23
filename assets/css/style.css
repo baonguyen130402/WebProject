@@ -60,7 +60,7 @@ html {
 
   position: absolute;
   left: 6px;
-  top: 42px;
+  top: 46px;
 }
 
 .navbar__item:hover > a {
@@ -185,8 +185,10 @@ html {
   transition: linear 0.25s;
 }
 
-.navbar__signup-btn:hover span {
+.navbar__signup-btn:hover span,
+.discover__container-btn:hover span {
   color: var(--green);
+  transition: linear 0.25s;
 }
 
 .logo__svg {
@@ -217,8 +219,13 @@ html {
 .discover__container-heading {
   text-transform: uppercase;
 
-  font-weight: 500;
-  font-size: 1.6rem;
+  height: 29px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
 
   color: var(--green);
 }
@@ -226,29 +233,56 @@ html {
 .discover__container-title h1 {
   color: var(--black);
 
-  font-weight: 450;
-  font-size: 8.2rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 8.1rem;
 
-  line-height: 8.1rem;
+  line-height: 100%;
+
+  margin: 0;
 }
 
 .discover__container-desc span {
-  font-size: 1.2rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
   color: var(--text);
 }
 
 .discover__container-heading,
 .discover__container-title,
 .discover__container-desc {
-  margin-bottom: 3.2rem;
+  margin-bottom: 3rem;
 }
 
 .discover__container-btn {
-  font-weight: 500;
-  font-size: 1.6rem;
+  width: 140px;
+  height: 34px;
 
   color: var(--primary);
   background-color: var(--green);
+}
+
+.discover__container-btn span {
+  width: 110px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .popular-place__container {
