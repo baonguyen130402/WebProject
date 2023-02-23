@@ -5,7 +5,7 @@
 html {
   font-size: 62.5%; /* 1rem = 10px */
   line-height: 1.6rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
@@ -25,14 +25,24 @@ html {
 .header {
   display: flex;
   align-items: center;
+
+  position: relative;
 }
 
 .header__navbar-container {
   margin-top: 40px;
 
-  width: 100%;
-
   font-size: 1.6rem;
+
+  position: absolute;
+  top: 40px;
+  left: 141px;
+  right: 150px;
+
+  display: inline-flex;
+  justify-content: space-around;
+
+  margin: 0;
 }
 
 .navbar__logo {
@@ -42,10 +52,16 @@ html {
 .supporting-logo {
   position: absolute;
 
-  left: 32px;
+  left: 26px;
 }
+.logo-desc {
+  font-size: 16px;
+  color: var(--green);
 
-.nav
+  position: absolute;
+  left: 6px;
+  top: 42px;
+}
 
 .navbar__item:hover > a {
   border-bottom: 1px solid black;
@@ -60,16 +76,31 @@ html {
 }
 
 .navbar__list {
-  display: inline-flex;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar__list .navbar__item {
   list-style-type: none;
 
-  margin-right: 1.6rem;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  gap: 55px;
+}
+
+.navbar__item {
+  /* margin-right: 5.5rem; */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: capitalize;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .navbar__account {
@@ -78,15 +109,66 @@ html {
 }
 
 .navbar__login-btn {
-  margin-right: 2rem;
+  margin-right: 5rem;
 
-  color: var(--green);
+  display: flex;
+  flex-direction: row;
+
+  width: 88px;
+  height: 34px;
+
   background-color: var(--primary);
 }
 
+.navbar__login-btn span {
+  width: 58px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: capitalize;
+
+  color: var(--green);
+}
+
 .navbar__signup-btn {
-  color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  width: 88px;
+  height: 34px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: capitalize;
   background-color: var(--green);
+}
+
+.navbar__signup-btn span {
+  width: 58px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-transform: capitalize;
+  color: #ffffff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .navbar__login-btn:hover {
@@ -99,9 +181,12 @@ html {
 .discover__container-btn:hover {
   background-color: var(--primary);
   border: var(--green) solid 1px;
-  color: var(--green);
 
   transition: linear 0.25s;
+}
+
+.navbar__signup-btn:hover span {
+  color: var(--green);
 }
 
 .logo__svg {
