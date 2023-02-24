@@ -311,10 +311,10 @@ html {
 
   text-transform: capitalize;
   text-align: center;
-  
+
   margin: 0;
 
-  color: var(--text-333)
+  color: var(--text-333);
 }
 
 .popular-place__title h1 {
@@ -341,26 +341,16 @@ html {
 }
 
 .popular-place__item-desc {
-  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-
-position: absolute;
-left: 0;
-
-/* padding: 0px;
-gap: 30px;
-
-flex: none;
-order: 0;
-flex-grow: 0; */
-
+  position: absolute;
+  left: 0;
 }
 
 .popular-place__item-name {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -368,7 +358,6 @@ flex-grow: 0; */
 
   margin-top: 18px;
   margin-bottom: 9px;
-
 }
 
 .popular-place__item-location {
@@ -379,15 +368,15 @@ flex-grow: 0; */
 .popular-place__item-location p {
   margin: 0;
 
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 
-text-transform: capitalize;
+  text-transform: capitalize;
 
-color: var(--text-6a);
+  color: var(--text-6a);
 }
 
 .popular-place__item-location img {
