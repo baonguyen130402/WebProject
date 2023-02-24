@@ -1,27 +1,40 @@
 //TODO: add event click for login Button
-
 const loginBtn = document.querySelector(".navbar__login-btn");
 const loginUI = document.querySelector(".signin");
+const loginContainer = document.querySelector(".signin__container");
 
-loginBtn.addEventListener("click", () => {
-  loginUI.classList.add("show-loginUI");
+const showLoginForm = () => loginUI.classList.add("show-loginUI");
+const hideLoginForm = () => loginUI.classList.remove("show-loginUI");
+
+loginBtn.addEventListener("click", showLoginForm);
+loginUI.addEventListener("click", hideLoginForm);
+loginContainer.addEventListener("click", (event) => {
+  event.stopPropagation();
 });
-
-loginUI.addEventListener("click", (event) => {
-  loginUI.classList.remove("show-loginUI");
-});
-
 
 //TODO: add event click for signup button
-
 const signupBtn = document.querySelector(".navbar__signup-btn");
 const signupUI = document.querySelector(".signup");
+const signupContainer = document.querySelector(".signup__container");
 
-signupBtn.addEventListener("click", () => {
-  signupUI.classList.add("show-signupUI");
+const showSignUpForm = () => signupUI.classList.add("show-signupUI");
+const hideSignUpForm = () => signupUI.classList.remove("show-signupUI");
+
+signupBtn.addEventListener("click", showSignUpForm);
+signupUI.addEventListener("click", hideSignUpForm);
+signupContainer.addEventListener("click", (event) => {
+  event.stopPropagation();
 });
 
-signupUI.addEventListener("click", (event) => {
-  signupUI.classList.remove("show-signupUI");
-});
-
+//TODO: hide-show password
+const passField = document.querySelector(".form__input--password");
+const showBtn = document.querySelector(".show-js");
+showBtn.onclick = () => {
+  if (passField.type === "password") {
+    passField.type = "text";
+    showBtn.classList.add("hide-btn");
+  } else {
+    passField.type = "password";
+    showBtn.classList.remove("hide-btn");
+  }
+};
