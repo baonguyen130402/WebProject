@@ -376,6 +376,17 @@ html {
   color: var(--text-6a);
 }
 
-.popular-place__item-location img {
+.popular-place__item-img{
   margin-right: 5px;
+}
+
+.popular-place__item-img:hover {
+  background-color: rgba(0, 0, 0, .9);
+  opacity: 0.8;
+  
+  border-radius: 15px;
+}
+
+.popular-place-card__container:hover {
+  border: 2px solid black;
 }
