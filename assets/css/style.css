@@ -185,6 +185,11 @@ html {
   transition: linear 0.25s;
 }
 
+.banner {
+  max-height: 100vh;
+  width: 100%;
+}
+
 .logo__svg {
   position: absolute;
 
@@ -328,7 +333,7 @@ html {
   justify-content: space-between;
 
   width: 90%;
-  margin: 109px auto auto auto;
+  margin: 100px auto auto auto;
 }
 
 .popular-place__item {
