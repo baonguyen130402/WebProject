@@ -1,9 +1,8 @@
 .earth__container {
     position: absolute;
-    right: 410px;
-    bottom: 267px;
+    top: 7px;
+    left: 245px;
 }
-
 .earth {
     width:66px;
     height:66px;
@@ -13,13 +12,13 @@
     background-image:url( https://raw.githubusercontent.com/cartalan/TierraGirando/master/img/mapa.png);
     background-size:cover;
     
-    position:absolute;
+    /* position:absolute;
     top:0;
     right:0;
     bottom:0;
-    left:0;
+    left:0; */
     
-    margin:auto;
+    /* margin:auto; */
     
     box-shadow:-15px -10px 0 0 rgba(0,0,0,.15) inset, -35px -15px 0 0 rgba(0,0,0,.1) inset, 2.5px 2.5px 0 0 rgba(255,255,255,.2) inset;
 
@@ -27,6 +26,10 @@
     -moz-animation:rotationEarth 8s infinite linear;
     animation:rotationEarth 8s infinite linear;
 }
+
+.the-world {
+    position: relative;
+  }
 
 @-webkit-keyframes rotationEarth {
    from {

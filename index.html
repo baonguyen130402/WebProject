@@ -1,284 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     /> -->
-    <link
-      rel="stylesheet"
-      href="//use.fontawesome.com/releases/v6.3.0/css/all.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.3.0/css/all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/SignInPage.css" />
-    <link rel="stylesheet" href="./assets/css/SignUpPage.css" />
-    <link rel="stylesheet" href="./assets/css/earthMove.css" />
-  </head>
-  <body>
-    <div class="app">
-      <header class="header">
-        <div class="header__navbar-container row">
-          <div class="col navbar__logo">
-            <img class="main-logo" src="./assets/svg/logo.svg" alt="" />
-            <img
-              class="supporting-logo"
-              src="./assets/svg/logo_plane.svg"
-              alt=""
-            />
-            <span class="logo-desc">Get out and discover</span>
-          </div>
-          <ul class="col navbar__list">
-            <li class="navbar__item"><a href="#" class="link">Home</a></li>
-            <li class="navbar__item"><a href="#" class="link">Explore</a></li>
-            <li class="navbar__item">
-              <a href="#" class="link">About Us</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="link">Contact Us</a>
-            </li>
-          </ul>
-          <div class="col navbar__account">
-            <button class="navbar__login-btn button"><span>Sign In</span></button>
-            <button class="navbar__signup-btn button">
-              <span>Signup</span>
-            </button>
-          </div>
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/SignInPage.css" />
+  <link rel="stylesheet" href="./assets/css/SignUpPage.css" />
+  <link rel="stylesheet" href="./assets/css/earthMove.css" />
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header__navbar-container row">
+        <div class="col navbar__logo">
+          <img class="main-logo" src="./assets/svg/logo.svg" alt="" />
+          <img class="supporting-logo" src="./assets/svg/logo_plane.svg" alt="" />
+          <span class="logo-desc">Get out and discover</span>
         </div>
-      </header>
-
-      <div class="banning row">
-        <img
-          class="logo__svg"
-          src="./assets/svg/mindala331350.svg"
-          alt=""
-        />
-        <div class="discover__container">
-          <div class="discover__container-heading">explore the world</div>
-          <div class="discover__container-title">
-            <h1>
-              It's Time <br />
-              To Travel Around The W--rld
-            </h1>
-          </div>
-          <div class="discover__container-desc">
-            <span>
-              Check Off the Ultimate Global Travel Checklist <br />
-              With your Travel Partner! Make your vacation a fun, exciting, and
-              <br />
-              unforgettable experience.
-            </span>
-          </div>
-          <div class="earth__container">
-            <div class="earth"></div>
-            <!-- <img class="global-svg" src="https://cdn.jsdelivr.net/gh/ManzDev/cursos-assets@gh-pages/css3/earth-2.jpg" alt=""> -->
-            <!-- <img src="./assets/svg/global.svg" alt=""> -->
-          </div>
-
-          <!-- <div id="box"></div> -->
-          <button class="button discover__container-btn"><span>Discover Now</span></button>
-        </div>
-
-        <div class="popular-place__container">
-          <h1 class="popular-place__title">
-            Popular Destination
-          </h1>
-
-          <ul class="popular-place__list">
-            <li class="popular-place__item">
-              <img src="./assets/svg/magicalKingdomPark.svg" class="popular-place__item-img">
-              </img>
-              <div class="popular-place__item-desc">
-                <p class="popular-place__item-name">
-                  Magical Kingdom Park
-                </p>
-                <div class="popular-place__item-location">
-                  <img src="./assets/svg/location.svg" alt="" class="popular-place__item-img">
-                  <p>Orlando, USA</p>
-                </div>
-              </div>
-            </li>
-            <li class="popular-place__item">
-              <img src="./assets/svg/statueOfLiberty.svg" class="popular-place__item-img">
-              </img>
-              <div class="popular-place__item-desc">
-                <p class="popular-place__item-name">
-                  Statue Of Liberty
-                </p>
-                <div class="popular-place__item-location">
-                  <img src="./assets/svg/location.svg" alt="" class="popular-place__item-img">
-                  <p>New York, USA</p>
-                </div>
-              </div>
-            </li>
-            <li class="popular-place__item">
-              <img src="./assets/svg/eiffelTower.svg" class="popular-place__item-img">
-              </img>
-              <div class="popular-place__item-desc">
-                <p class="popular-place__item-name">
-                  Eiffel Tower
-                </p>
-                <div class="popular-place__item-location">
-                  <img src="./assets/svg/location.svg" alt="" class="popular-place__item-img">
-                  <p>Paris, France</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="popular-place__item">
-              <img src="./assets/svg/CNTower.svg" class="popular-place__item-img">
-              </img>
-              <div class="popular-place__item-desc">
-                <p class="popular-place__item-name">
-                  CN Tower
-                </p>
-                <div class="popular-place__item-location">
-                  <img src="./assets/svg/location.svg" alt="" class="popular-place__item-img">
-                  <p>Toronto, Canada</p>
-                </div>
-              </div>
-            </li>
-            <li class="popular-place__item">
-              <img style="width: 270px; height: 360px; border-radius: 15px;" src="./assets/picture/caption.jpg" class="popular-place__item-img">
-              </img>
-              <div class="popular-place__item-desc">
-                <p class="popular-place__item-name">
-                  Oia
-                </p>
-                <div class="popular-place__item-location">
-                  <img src="./assets/svg/location.svg" alt="" class="popular-place__item-img">
-                  <p>Orlando, USA</p>
-                </div>
-              </div>
-            </li>
-            
-          </ul>
-        </div>
-
-        <!-- Sign In Page -->
-        <div class="signin">
-          <div class="signin__container">
-            <h2 class="signin__title">Sign In</h2>
-
-            <div class="signin__form">
-              <form class="form__group">
-                <p class="signin__label">Email</p>
-                <input
-                  class="form__input"
-                  type="email"
-                  placeholder="Enter your email"
-                />
-              </form>
-              <form class="form__group">
-                <p class="signin__label">Password</p>
-                <div class="form__password">
-                  <input
-                    class="form__input form__input--password"
-                    type="password"
-                    placeholder="Password"
-                    required
-                  />
-                  <span><i class="fas fa-eye show-js"></i></span>
-                </div>
-              </form>
-              <div class="checkbox__remember">
-                <div class="checkbox__remember--remember">
-                  <input type="checkbox" id="remember-forgot" />
-                  <label for="remember-forgot">Remember for 30 days </label>
-                </div>
-                <a
-                  href="#"
-                  class="signin__forgot-password signin__link signin__link--none"
-                  >Forgot password</a
-                >
-              </div>
-              <button type="submit" class="signin-btn">Sign In</button>
-            </div>
-            <p class="signin__donthaveAccount">
-              Don't have an account?
-              <a
-                href="./SignUp_Page.html"
-                class="signin__link signin__link--none"
-                >Sign Up</a
-              >
-            </p>
-          </div>
+        <ul class="col navbar__list">
+          <li class="navbar__item"><a href="#" class="link">Home</a></li>
+          <li class="navbar__item"><a href="#" class="link">Explore</a></li>
+          <li class="navbar__item">
+            <a href="#" class="link">About Us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="link">Contact Us</a>
+          </li>
+        </ul>
+        <div class="col navbar__account">
+          <button class="navbar__login-btn button"><span>Sign In</span></button>
+          <button class="navbar__signup-btn button">
+            <span>Signup</span>
+          </button>
         </div>
       </div>
+    </header>
 
-      <!-- Sign Up Page -->
-      <div class="signup">
-        <div class="signup__container">
-          <h2 class="signup__title">Create Account</h2>
-          <p class="signup__haveAccount">
-            Already have an account?
-            <a
-              href="./SignIn_Page.html"
-              style="font-weight: bold"
-              class="signup__link signup__link--none"
-              >Sign-in</a
-            >
-            instead
-          </p>
-
-          <div class="signup__form">
-            <form class="form__group form__group--2">
-              <input class="form__input" type="text" placeholder="First Name" />
-              <input class="form__input" type="text" placeholder="Last Name" />
-            </form>
-            <form class="form__group">
-              <input class="form__input" type="text" placeholder="Username" />
-            </form>
-            <form class="form__group form__group--2">
-              <input
-                class="form__input"
-                type="password"
-                placeholder="Password"
-              />
-              <input
-                class="form__input"
-                type="password"
-                placeholder="Confirm password"
-              />
-            </form>
-            <form class="form__group">
-              <input class="form__input" type="text" placeholder="E-mail" />
-            </form>
-            <button type="submit" class="signup-btn">
-              Sign Up
-              <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-            <div class="form__terms">
-              <input type="checkbox" id="terms" />
-              <label for="terms"
-                >I have read and agree to
-                <a href="#" class="signup__link">Terms of Service</a>
-              </label>
+    <div class="banning">
+      <img class="logo__svg" src="./assets/svg/mindala331350.svg" alt="" />
+      <div class="discover__container">
+        <div class="discover__container-heading">explore the world</div>
+        <div class="discover__container-title">
+          <h1>
+            It's Time <br />
+            To Travel Around
+          </h1>
+          <h1 class="the-world">
+            The W
+            <div class="earth__container">
+              <div class="earth"></div>
             </div>
+            -rld
+          </h1>
+        </div>
+        <div class="discover__container-desc">
+          <span>
+            Check Off the Ultimate Global Travel Checklist
+            With your <br> Travel Partner! Make your vacation a fun, exciting, and
+            <br />
+            unforgettable experience.
+          </span>
+        </div>
+
+
+      
+        <button class="button discover__container-btn"><span>Discover Now</span></button>
+      </div>
+    </div>
+
+    <div class="popular-place__container">
+      <h1 class="popular-place__title">
+        Popular Destination
+      </h1>
+
+      <ul class="popular-place__list">
+        <li class="popular-place__item">
+          <img src="./assets/svg/magicalKingdomPark.svg" class="popular-place__item-img">
+          </img>
+          <div class="popular-place__item-desc">
+            <p class="popular-place__item-name">
+              Magical Kingdom Park
+            </p>
+            <div class="popular-place__item-location">
+              <img src="./assets/svg/location.svg" alt="" class="popular-place__item-img">
+              <p>Orlando, USA</p>
+            </div>
+          </div>
+        </li>
+        <li class="popular-place__item">
+          <img src="./assets/svg/statueOfLiberty.svg" class="popular-place__item-img">
+          </img>
+          <div class="popular-place__item-desc">
+            <p class="popular-place__item-name">
+              Statue Of Liberty
+            </p>
+            <div class="popular-place__item-location">
+              <img src="./assets/svg/location.svg" alt="" class="popular-place__item-img">
+              <p>New York, USA</p>
+            </div>
+          </div>
+        </li>
+        <li class="popular-place__item">
+          <img src="./assets/svg/eiffelTower.svg" class="popular-place__item-img">
+          </img>
+          <div class="popular-place__item-desc">
+            <p class="popular-place__item-name">
+              Eiffel Tower
+            </p>
+            <div class="popular-place__item-location">
+              <img src="./assets/svg/location.svg" alt="" class="popular-place__item-img">
+              <p>Paris, France</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="popular-place__item">
+          <img src="./assets/svg/CNTower.svg" class="popular-place__item-img">
+          </img>
+          <div class="popular-place__item-desc">
+            <p class="popular-place__item-name">
+              CN Tower
+            </p>
+            <div class="popular-place__item-location">
+              <img src="./assets/svg/location.svg" alt="" class="popular-place__item-img">
+              <p>Toronto, Canada</p>
+            </div>
+          </div>
+        </li>
+        <li class="popular-place__item">
+          <img style="width: 270px; height: 360px; border-radius: 15px;" src="./assets/picture/caption.jpg"
+            class="popular-place__item-img">
+          </img>
+          <div class="popular-place__item-desc">
+            <p class="popular-place__item-name">
+              Oia
+            </p>
+            <div class="popular-place__item-location">
+              <img src="./assets/svg/location.svg" alt="" class="popular-place__item-img">
+              <p>Orlando, USA</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="vacation-package__container">
+      <h1 class="vacation-package__heading">
+        Vacation Package
+      </h1>
+
+      <ul class="vacation-package__content">
+        <li class="vacation-package__card">
+          <img class="vacation-package__card-img" src="./assets/picture/athens.jpg" alt="">
+          <div class="vacation-package__card-content">
+            <div class="vacation-package__card-name">Athens, Greece</div>
+            <div class="vacation-package__card-rate">
+                <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+                <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+                <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+            </div>
+            <div class="vacation-package__card-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quo error soluta nam. Impedit placeat veniam dolorum unde sint, ea tenetur ducimus, suscipit repellat praesentium distinctio magni corporis perferendis?
+            </div>
+            <div class="vacation-package__card-payment">
+              <div class="vacation-package__card-price">
+                <span>From</span>
+                $500
+              </div>
+  
+              <button class="button vacation-package__card-btn">
+                <span>Details</span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="vacation-package__card">
+          <img class="vacation-package__card-img" src="./assets/picture/rome.jpg" alt="">
+          <div class="vacation-package__card-content">
+            <div class="vacation-package__card-name">Rome, Italy</div>
+            <div class="vacation-package__card-rate">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+            </div>
+            <div class="vacation-package__card-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quo error soluta nam. Impedit placeat veniam dolorum unde sint, ea tenetur ducimus, suscipit repellat praesentium distinctio magni corporis perferendis?
+            </div>
+            <div class="vacation-package__card-payment">
+              <div class="vacation-package__card-price">
+                <span>From</span>
+                $700
+              </div>
+  
+              <button class="button vacation-package__card-btn">
+                <span>Details</span>
+              </button>
+          </div>
+          </div>
+        </li>
+        <li class="vacation-package__card">
+          <img class="vacation-package__card-img" src="./assets/picture/agra.jpg" alt="">
+          <div class="vacation-package__card-content">
+            <div class="vacation-package__card-name">Agra, India</div>
+            <div class="vacation-package__card-rate">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+            </div>
+            <div class="vacation-package__card-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quo error soluta nam. Impedit placeat veniam dolorum unde sint, ea tenetur ducimus, suscipit repellat praesentium distinctio magni corporis perferendis?
+            </div>
+            <div class="vacation-package__card-payment">
+              <div class="vacation-package__card-price">
+                <span>From</span>
+                $459
+              </div>
+  
+              <button class="button vacation-package__card-btn">
+                <span>Details</span>
+              </button>
+          </div>
+          </div>
+        </li>
+        <li class="vacation-package__card">
+          <img class="vacation-package__card-img" src="./assets/picture/bali.jpg" alt="">
+          <div class="vacation-package__card-content">
+            <div class="vacation-package__card-name">Bali, Indonesia</div>
+            <div class="vacation-package__card-rate">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+            </div>
+            <div class="vacation-package__card-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quo error soluta nam. Impedit placeat veniam dolorum unde sint, ea tenetur ducimus, suscipit repellat praesentium distinctio magni corporis perferendis?
+            </div>
+            <div class="vacation-package__card-payment">
+              <div class="vacation-package__card-price">
+                <span>From</span>
+                $509
+            </div>
+ 
+              <button class="button vacation-package__card-btn">
+                <span>Details</span>
+              </button>
+          </div>
+          </div>
+        </li>
+        <li class="vacation-package__card">
+          <img class="vacation-package__card-img" src="./assets/picture/sondoong.jpg" alt="">
+          <div class="vacation-package__card-content">
+            <div class="vacation-package__card-name">Son Doong, Viet Nam</div>
+            <div class="vacation-package__card-rate">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+              <img class="vacation-package__card-star" src="./assets/svg/star.svg" alt="">
+            </div>
+            <div class="vacation-package__card-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quo error soluta nam. Impedit placeat veniam dolorum unde sint, ea tenetur ducimus, suscipit repellat praesentium distinctio magni corporis perferendis?
+            </div>
+            <div class="vacation-package__card-payment">
+              <div class="vacation-package__card-price">
+                <span>From</span>
+                $400
+              </div>
+              <button class="button vacation-package__card-btn">
+                <span>Details</span>
+              </button>
+          </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Sign In Page -->
+      <div class="signin">
+        <div class="signin__container">
+          <h2 class="signin__title">Sign In</h2>
+
+          <div class="signin__form">
+            <form class="form__group">
+              <p class="signin__label">Email</p>
+              <input class="form__input" type="email" placeholder="Enter your email" />
+            </form>
+            <form class="form__group">
+              <p class="signin__label">Password</p>
+              <div class="form__password">
+                <input class="form__input form__input--password" type="password" placeholder="Password" required />
+                <span><i class="fas fa-eye show-js"></i></span>
+              </div>
+            </form>
+            <div class="checkbox__remember">
+              <div class="checkbox__remember--remember">
+                <input type="checkbox" id="remember-forgot" />
+                <label for="remember-forgot">Remember for 30 days </label>
+              </div>
+              <a href="#" class="signin__forgot-password signin__link signin__link--none">Forgot password</a>
+            </div>
+            <button type="submit" class="signin-btn">Sign In</button>
+          </div>
+          <p class="signin__donthaveAccount">
+            Don't have an account?
+            <a href="./SignUp_Page.html" class="signin__link signin__link--none">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up Page -->
+    <div class="signup">
+      <div class="signup__container">
+        <h2 class="signup__title">Create Account</h2>
+        <p class="signup__haveAccount">
+          Already have an account?
+          <a href="./SignIn_Page.html" style="font-weight: bold" class="signup__link signup__link--none">Sign-in</a>
+          instead
+        </p>
+
+        <div class="signup__form">
+          <form class="form__group form__group--2">
+            <input class="form__input" type="text" placeholder="First Name" />
+            <input class="form__input" type="text" placeholder="Last Name" />
+          </form>
+          <form class="form__group">
+            <input class="form__input" type="text" placeholder="Username" />
+          </form>
+          <form class="form__group form__group--2">
+            <input class="form__input" type="password" placeholder="Password" />
+            <input class="form__input" type="password" placeholder="Confirm password" />
+          </form>
+          <form class="form__group">
+            <input class="form__input" type="text" placeholder="E-mail" />
+          </form>
+          <button type="submit" class="signup-btn">
+            Sign Up
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          <div class="form__terms">
+            <input type="checkbox" id="terms" />
+            <label for="terms">I have read and agree to
+              <a href="#" class="signup__link">Terms of Service</a>
+            </label>
           </div>
         </div>
       </div>
     </div>
-  </body>
-  <script src="./assets/js/index.js"></script>
+  </div>
+</body>
+<script src="./assets/js/index.js"></script>
+
 </html>

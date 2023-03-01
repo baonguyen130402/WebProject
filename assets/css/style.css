@@ -130,10 +130,6 @@ html {
 }
 
 .navbar__signup-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 10px;
   width: 88px;
   height: 34px;
 
@@ -175,29 +171,29 @@ html {
 .discover__container-btn:hover {
   background-color: var(--primary);
   border: var(--green) solid 1px;
-
-  transition: linear 0.25s;
 }
 
 .navbar__signup-btn:hover span,
 .discover__container-btn:hover span {
   color: var(--green);
-  transition: linear 0.25s;
 }
 
-.banner {
-  max-height: 100vh;
-  width: 100%;
+.banning {
+  min-height: 100vh;
+  width: 90%;
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+
+  animation: moveUp linear 0.8s;
 }
 
 .logo__svg {
-  position: absolute;
+  margin-top: 0px;
 
-  top: 115px;
-  left: 36px;
-
-  width: 75.587rem;
-  height: 75.587rem;
+  width: 45%;
 }
 
 .logo__svg:hover {
@@ -205,14 +201,8 @@ html {
 }
 
 .discover__container {
-  position: absolute;
-  left: 830px;
-  top: 309px;
-
-  width: 661px;
-  height: 529px;
-
-  animation: moveUp linear 0.5s;
+  margin: 300px 0 0 100px;
+  width: 40%;
 }
 
 .discover__container-heading {
@@ -291,11 +281,6 @@ html {
 
   padding: 0px;
   gap: 20px;
-
-  position: absolute;
-  top: 100vh;
-  width: 100%;
-  height: 443px;
 }
 
 .popular-place__title {
@@ -334,19 +319,14 @@ html {
 
   width: 90%;
   margin: 100px auto auto auto;
-}
 
-.popular-place__item {
-  position: relative;
+  padding-bottom: 30px;
 }
 
 .popular-place__item-desc {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  position: absolute;
-  left: 0;
 }
 
 .popular-place__item-name {
@@ -379,17 +359,188 @@ html {
   color: var(--text-6a);
 }
 
-.popular-place__item-img{
+.popular-place__item-img {
   margin-right: 5px;
 }
 
 .popular-place__item-img:hover {
-  background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, 0.9);
   opacity: 0.8;
-  
+
   border-radius: 15px;
 }
 
 .popular-place-card__container:hover {
   border: 2px solid black;
+}
+
+.vacation-package__container {
+  background-color: var(--bg-color);
+  padding: 30px;
+}
+
+.vacation-package__heading {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57px;
+  text-transform: capitalize;
+
+  color: var(--black);
+}
+
+.vacation-package__content {
+  display: flex;
+  flex-direction: row;
+
+  list-style-type: none;
+  padding: 0;
+
+  width: 90%;
+
+  margin: 60px auto;
+}
+
+.vacation-package__card:last-child {
+  margin: 0;
+}
+
+.vacation-package__card {
+  background-color: var(--white);
+
+  width: 22.5%;
+  overflow: hidden;
+
+  margin-right: 20px;
+
+  border-radius: 20px;
+
+  filter: drop-shadow(0px 16px 40px rgba(112, 144, 176, 0.2));
+}
+
+.vacation-package__card:hover {
+  animation: hoverMoveUp linear .25s;
+  
+}
+
+.vacation-package__card-img {
+  /* border-radius: 20px 20px 0 0; */
+  width: 374px;
+  height: 250px;
+
+  object-fit: cover;
+
+  transform: translateY(-2%);
+}
+
+.vacation-package__card-content {
+  padding: 8px;
+}
+.vacation-package__card-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  margin-bottom: 10px;
+
+  text-transform: capitalize;
+
+  color: var(--black);
+}
+
+.vacation-package__card-rate {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 10px;
+}
+
+.vacation-package__card-star {
+  color: var(--star-color);
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.vacation-package__card-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+
+  color: var(--text-6a);
+}
+
+.vacation-package__card-payment {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 12px;
+}
+
+.vacation-package__card-btn {
+  background-color: var(--green);
+
+  padding: 5px 20px;
+
+  border-radius: 10px;
+}
+
+.vacation-package__card-btn:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--green);
+}
+
+.vacation-package__card-btn:hover span {
+  color: var(--green);
+}
+
+.vacation-package__card-btn span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+
+  text-transform: capitalize;
+
+  color: var(--white);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.vacation-package__card-price span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  text-transform: capitalize;
+
+  color: var(--black);
+
+  margin-right: 4px;
+}
+
+.vacation-package__card-price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+
+  text-transform: capitalize;
+
+  color: #ff6b6b;
+
+  display: flex;
+  align-items: center;
 }
